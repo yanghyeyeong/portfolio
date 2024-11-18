@@ -1,388 +1,448 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>포트폴리오</title>
-        <link rel="stylesheet" href="css/index.css" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=DynaPuff:wght@400..700&family=Gasoek+One&family=Great+Vibes&family=Jua&family=Manrope:wght@200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Smooch&family=Yellowtail&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포트폴리오</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/custom.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Noto+Serif+KR:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <body>
-        <header>
-            <ul class="menu">
-                <li><a href="#page1">PAGE1</a></li>
-                <li><a href="#page2">PAGE2</a></li>
-                <li><a href="#page3">PAGE3</a></li>
-                <li><a href="#page4">PAGE4</a></li>
-                <li><a href="#page5">PAGE5</a></li>
-                <li><a href="#page6">PAGE6</a></li>
-            </ul>
-        </header>
-        <div id="visual">
-            <div class="mainbox1">
-                <div class="maintxt1">
-                    <h1>
-                        <a href="index.html">
-                            <img src="img/logo.png" />
-                        </a>
-                    </h1>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
-                    <h2>20<br /><span class="year">24</span></h2>
-                </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  </head>
 
-                <div class="mainbox2">
-                    <div class="maintxt2">
-                        <div class="contact">
-                            <img src="img//visual_circle_line2.png" />
-                            <h3 class="web">
-                                세상을 연결하는<br />웹퍼블리셔,
-                                <span class="name">양혜영</span> 입니다.
-                            </h3>
-                            <img class="one" src="img/star1.png" />
-                            <img class="two" src="img/star2.png" />
-                        </div>
+  <body>
+    <header>
+      <ul class="menu">
+        <li><a href="#page1">PAGE1</a></li>
+        <li><a href="#page2">PAGE2</a></li>
+        <li><a href="#page3">PAGE3</a></li>
+        <li><a href="#page4">PAGE4</a></li>
+        <li><a href="#page5">PAGE5</a></li>
+        <li><a href="#page6">PAGE6</a></li>
+      </ul>
+    </header>
 
-                        <div class="subtxt">
-                            <h4>
-                                <a href="#">PORTFOLIO</a><br />
-                                <a href="#">DESIGN</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
+    <div id="visual">
+      <div class="mainlogo">
+        <div class="maintxt1">
+          <h1>
+            <a href="index.html">
+              <img src="img/logo.png" />
+            </a>
+          </h1>
+
+          <h2>20<br /><span class="year">24</span></h2>
+        </div>
+        <div class="mainbox2">
+          <div class="bigcircle"></div>
+          <div class="loading">
+            <span class="circle1"></span>
+            <span class="circle2"></span>
+          </div>
+        </div>
+        <div class="maintxt_name">
+          <p>
+            세상을 연결하는 <br />&nbsp;&nbsp;웹퍼블리셔,
+            <span>양혜영</span>
+            입니다
+          </p>
+        </div>
+
+        <div class="file">
+          <p>WEB PUBLISHER PORTFOLIO</p>
+          <hr />
+          <div>
+            <a class="portfolio" href="#page3"
+              ><i class="fa-solid fa-diamond dia"></i> WEB
+              <i class="fa-solid fa-diamond dia"></i
+            ></a>
+
+            <a class="design" href="#page5">
+              <i class="fa-solid fa-diamond dia"></i> DESIGN
+              <i class="fa-solid fa-diamond dia"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="container">
+      <section class="page1" id="page1">
+        <ul class="profile">
+          <li class="photo">
+            <img class="me" src="img/profile.jpg" />
+            <p class="resolution">
+              "모든 선택에는 이유가 있는 명확함이 있다고 생각합니다.<br />
+              사용자의 경험 또한 어떤 영향을 미칠지에 대한 중요한 근거가 될 수
+              있기에,<br />
+              작은 웹사이트라 할지라도 구조를 안정적으로 구현해나가서<br />
+              사용자에게 편리함을 전달하는 웹퍼블리셔로 도약해 나가고 싶습니다."
+            </p>
+          </li>
+
+          <li class="self">
+            <div class="self_me">
+              <p class="name_txt">양 혜 영 / <span>Yang Hye Yeong</span></p>
+
+              <p class="age">
+                Age.&nbsp;&nbsp;&nbsp;&nbsp;<span>1991.05.18</span>
+              </p>
+
+              <p class="tel">
+                TEL.&nbsp;&nbsp;&nbsp;&nbsp;<span>010-4103-3796</span>
+              </p>
+              <p class="email">EMAIL.&nbsp;<span>eyhyy1@naver.com</span></p>
             </div>
+            <div class="education">
+              <p class="education_txt">EDUCATION</p>
+              <p>
+                <span>2024.12 </span>- MBC 아카데미 웹디자인&웹퍼블리셔 수료
+              </p>
+              <p><span>2014.02</span> - 동신대학교 보석공학과 졸업</p>
+            </div>
+            <div>
+              <p class="skill_txt">SKILL</p>
+              <div class="skill_progress">
+                <ul class="skill">
+                  <li>
+                    <img src="img/html.png" />
+                    <ul class="bar">
+                      <li class="pro1"></li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <img src="img/html.png" />
+                    <span class="bar">
+                      <span class="pro1"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <img src="img/html.png" />
+                    <span class="bar">
+                      <span class="pro1"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <img src="img/html.png" />
+                    <span class="bar">
+                      <span class="pro1"></span>
+                    </span>
+                  </li>
+                </ul>
+                <ul class="skill">
+                  <li>
+                    <img src="img/html.png" />
+                    <ul class="bar">
+                      <li class="pro1"></li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <img src="img/html.png" />
+                    <span class="bar">
+                      <span class="pro1"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <img src="img/html.png" />
+                    <span class="bar">
+                      <span class="pro1"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <img src="img/html.png" />
+                    <span class="bar">
+                      <span class="pro1"></span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="lisence">
+              <p class="lisence_txt">LISENCE</p>
+              <p>
+                <span>2024.09.09 - </span>웹디자인기능사 필기합격<span>
+                  (한국산업인력공단)</span
+                >
+              </p>
+              <p>
+                <span>2024.09.13 - </span> GTQ 1급<span>
+                  <span> (한국생산성본부)</span>
+                </span>
+              </p>
+              <p>
+                <span>2023.12.13 - </span>
+                사무자동화산업기사
+                <span> (한국산업인력공단)</span>
+              </p>
+              <p class="word">
+                <span>2022.04.15 - </span>
+                워드프로세서 1급<span> (대한상공회의소)</span>
+              </p>
+            </div>
+            <div class="career">
+              <p class="career_txt1">CAREER</p>
+              <p>
+                <span>2018.07~2024.06 -</span>
+                NH농협생명근무<span> (IT기획팀, 방카사업팀)</span>
+              </p>
+              <p class="career_txt2">
+                <span>2013.09-2014.09</span> - 미래골드 근무<span>
+                  (주얼리 도매팀)</span
+                >
+              </p>
+            </div>
+            <div class="interested">
+              <p class="interested_txt">INTERESTED</p>
+
+              <ul>
+                <li>
+                  <div class="interested_txt1">
+                    <i class="fa-solid fa-headphones interested_icon"></i>
+                    <p>MUSIC</p>
+                  </div>
+                  <p class="interested_txt2">
+                    곡의 흐름이 변하고 분위기가 바뀌면 새로운 감정의 흐름을
+                    발견할 수 있습니다. 그래서 다양한 장르의 음악을 듣는 것을
+                    좋아합니다.
+                  </p>
+                </li>
+
+                <li>
+                  <div class="interested_txt1">
+                    <i class="fa-solid fa-pencil interested_icon"></i>
+                    <p>DRAWING</p>
+                  </div>
+                  <p class="interested_txt2">
+                    마카로 그림을 그립니다. 그리고자 하는 대상의 선과 명암을
+                    실제처럼 나타낼 수 있을지를 고민하는 것을 좋아합니다.<br />
+                    마카재료 특성상 건조가 빠르다는 점이 짧은 시간내에 결과물을
+                    볼 수 있다는 흥미로움을 가져옵니다.
+                  </p>
+                </li>
+
+                <li>
+                  <div class="interested_txt1">
+                    <i class="fa-solid fa-clapperboard interested_icon"></i>
+                    <p>MOVIE</p>
+                  </div>
+                  <p class="interested_txt2">
+                    영화보는 것을 좋아합니다. 다양한 장르의 영화속의 이야기들은
+                    새로운 창의력을 안겨줍니다. 실제 상황에서는 일어나지 않을
+                    법한 일들을 통해 다양한 관점에서 사물을 바라보는 시각화를
+                    만들어 줍니다.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="wrap1">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 595.28 841.89"
+                style="enable-background: new 0 0 595.28 841.89"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 4;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 10;
+                  }
+                </style>
+                <path
+                  class="st0"
+                  d="M0,509.33c0,0,355.84,57.58,437.23-135.35s-55.84-175.76-76.66-93.94s53.94,162.62,133.44,140.9
+                           s101.26-105.55,101.26-105.55"
+                />
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="page2" id="page2">
+        <div class="ddd">
+          <div class="logo">
+            <div class="bg1"></div>
+            <div class="bg2"></div>
+            <div class="bg3"></div>
+          </div>
+          <ul>
+            <li><img src="img/logo1.png" /></li>
+          </ul>
+
+          <div class="logo_txt">
+            <h3>Logo</h3>
+            <p>
+              이니셜 "H"와 "Y"를 이용해서<br />
+              구조물의 중요한 지지요소인<br />
+              다리를 표현했습니다.<br />
+              <br />
+              웹사이트의 구조를 안정적으로<br />
+              구현해내고자 하는 의미를 담았습니다.<br />
+              <br />
+              또한, 파란색 계열의 컬러를 매치시켜<br />
+              신뢰, 조화, 믿음을 상징했습니다.
+            </p>
+          </div>
         </div>
-        <div id="container">
-            <section class="page1" id="page1">
-                <ul class="profile">
-                    <li class="photo">
-                        <img class="me" src="img/profile.jpg" />
-                        <p class="resolution">
-                            "웹사이트의 구조를 안정적으로 구현해나가는<br />
-                            웹퍼블리셔로 도약해 나가고 싶습니다."
-                        </p>
+      </section>
 
-                        <!-- <img class="blue1" src="img/blue_star1.png" />
-                        <img class="blue2" src="img/blue_star2.png" /> -->
-                    </li>
-
-                    <li class="self">
-                        <div class="self_me">
-                            <p class="name_txt">
-                                양 혜 영 / <span>Yang Hye Yeong</span>
-                            </p>
-
-                            <p class="age">
-                                Age.&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                    >1991.05.18</span
-                                >
-                            </p>
-
-                            <p class="tel">
-                                TEL.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                    >010-4103-3796</span
-                                >
-                            </p>
-                            <p class="email">
-                                EMAIL.&nbsp;<span>eyhyy1@naver.com</span>
-                            </p>
-                        </div>
-                        <div class="education">
-                            <p class="education_txt">EDUCATION</p>
-                            <p>
-                                <span>2024.12 </span>- MBC 아카데미
-                                웹디자인&웹퍼블리셔 수료
-                            </p>
-                            <p>
-                                <span>2014.02</span> - 동신대학교 보석공학과
-                                졸업
-                            </p>
-                        </div>
-                        <div>
-                            <p class="skill_txt">SKILL</p>
-                            <div class="skill_progress">
-                                <ul class="skill">
-                                    <li>
-                                        <img src="img/html.png" />
-                                        <ul class="bar">
-                                            <li class="pro1"></li>
-                                        </ul>
-                                    </li>
-
-                                    <li>
-                                        <img src="img/html.png" />
-                                        <span class="bar">
-                                            <span class="pro1"></span>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <img src="img/html.png" />
-                                        <span class="bar">
-                                            <span class="pro1"></span>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <img src="img/html.png" />
-                                        <span class="bar">
-                                            <span class="pro1"></span>
-                                        </span>
-                                    </li>
-                                </ul>
-                                <ul class="skill">
-                                    <li>
-                                        <img src="img/html.png" />
-                                        <ul class="bar">
-                                            <li class="pro1"></li>
-                                        </ul>
-                                    </li>
-
-                                    <li>
-                                        <img src="img/html.png" />
-                                        <span class="bar">
-                                            <span class="pro1"></span>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <img src="img/html.png" />
-                                        <span class="bar">
-                                            <span class="pro1"></span>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <img src="img/html.png" />
-                                        <span class="bar">
-                                            <span class="pro1"></span>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="lisence">
-                            <p class="lisence_txt">LISENCE</p>
-                            <p>
-                                웹디자인기능사 필기합격<span
-                                    >(한국산업인력공단 / 2024.09.09)</span
-                                >
-                            </p>
-                            <p>
-                                GTQ 1급<span
-                                    >(한국생산성본부 / 2024.09.13)
-                                </span>
-                            </p>
-                            <p>
-                                사무자동화산업기사<span
-                                    >(한국산업인력공단 / 2023.12.13)</span
-                                >
-                            </p>
-                            <p class="word">
-                                워드프로세서 1급<span
-                                    >(대한상공회의소 / 2022.04.15)</span
-                                >
-                            </p>
-                        </div>
-                        <div class="career">
-                            <p class="career_txt">CAREER</p>
-                            <p>
-                                <span>2018.07-2024.06</span> -
-                                NH농협생명근무(IT기획팀, 방카사업팀)
-                            </p>
-                            <p>
-                                <span>2013.09-2014.09</span> - 미래골드
-                                근무(주얼리 도매팀)
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="page2" id="page2">
-                <div class="ddd">
-                    <div class="logo">
-                        <div class="bg1"></div>
-                        <div class="bg2"></div>
-                        <div class="bg3"></div>
-                    </div>
-                    <ul>
-                        <li><img src="img/logo1.png" /></li>
-                    </ul>
-
-                    <div class="logo_txt">
-                        <h3>Logo</h3>
-                        <p>
-                            이니셜 "H"와 "Y"를 이용해서<br />
-                            구조물의 중요한 지지요소인<br />
-                            다리를 표현했습니다.<br />
-                            <br />
-                            웹사이트의 구조를 안정적으로<br />
-                            구현해내고자 하는 의미를 담았습니다.<br />
-                            <br />
-                            또한, 파란색 계열의 컬러를 매치시켜<br />
-                            신뢰, 조화, 믿음을 상징했습니다.
-                        </p>
-                    </div>
+      <section class="page3" id="page3">
+        <h2 class="po">PORTFOILO</h2>
+        <ul class="interduce_portfoilo">
+          <li>
+            <div class="site1">
+              <p class="site1_name">DAILY HEALTHY FOOD</p>
+              <div class="program">
+                <p>프로그램</p>
+                <div>
+                  <img src="img/html.png" />
+                  <img src="img/html.png" />
+                  <img src="img/html.png" />
                 </div>
-            </section>
-
-            <section class="page3" id="page3">
-                <h2 class="po">PORTFOILO</h2>
-                <ul class="interduce_portfoilo">
-                    <li>
-                        <div class="site1">
-                            <p class="site1_name">DAILY HEALTHY FOOD</p>
-                            <div class="program">
-                                <p>프로그램</p>
-                                <div>
-                                    <img src="img/html.png" />
-                                    <img src="img/html.png" />
-                                    <img src="img/html.png" />
-                                </div>
-                            </div>
-                            <div class="contribution">
-                                <p class="contribution_txt1">기여도</p>
-                                <div>
-                                    <p>
-                                        기&nbsp;&nbsp;&nbsp;획&nbsp;<span
-                                            >100%</span
-                                        >
-                                    </p>
-                                    <p>디자인 <span>100%</span></p>
-                                    <p>
-                                        제&nbsp;&nbsp;&nbsp;작&nbsp;<span
-                                            >100%</span
-                                        >
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="announce">
-                                <p class="an_txt1">내용설명</p>
-                                <p class="an_txt2">
-                                    기존 사이트의 아쉬웠던 점을<br />
-                                    개선하여 메인페이지를 새롭게 제작했습니다.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/pc_mockup.png" />
-                    </li>
-                </ul>
-            </section>
-            <section class="page4" id="page4">
-                <ul class="interduce_portfoilo">
-                    <li>
-                        <div class="site1">
-                            <p class="site1_name">DAILY HEALTHY FOOD</p>
-                            <div class="program">
-                                <p>프로그램</p>
-                                <div>
-                                    <img src="img/html.png" />
-                                    <img src="img/html.png" />
-                                    <img src="img/html.png" />
-                                </div>
-                            </div>
-                            <div class="contribution">
-                                <p class="contribution_txt1">기여도</p>
-                                <div>
-                                    <p>
-                                        기&nbsp;&nbsp;&nbsp;획&nbsp;<span
-                                            >100%</span
-                                        >
-                                    </p>
-                                    <p>디자인 <span>100%</span></p>
-                                    <p>
-                                        제&nbsp;&nbsp;&nbsp;작&nbsp;<span
-                                            >100%</span
-                                        >
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="announce">
-                                <p class="an_txt1">내용설명</p>
-                                <p class="an_txt2">
-                                    기존 사이트의 아쉬웠던 점을<br />
-                                    개선하여 메인페이지를 새롭게 제작했습니다.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/pc_mockup.png" />
-                    </li>
-                </ul>
-            </section>
-
-            <section class="page5" id="page5">
-                <h2 class="de">DESIGN</h2>
-                <div class="new_de">
-                    <ul class="period">
-                        <li class="new_de_txt">Illustrator New Design</li>
-                        <li class="underbar">-</li>
-                        <li>
-                            <strong>작업기간</strong>
-                            <span
-                                >&nbsp;&nbsp;&nbsp;&nbsp;2024.11.01~11.30</span
-                            >
-                        </li>
-                        <li>
-                            <strong>기 여 도</strong>
-                            <span
-                                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1인 제작 /
-                                100%</span
-                            >
-                        </li>
-                        <li>
-                            <strong>프로그램</strong>
-                            <span
-                                >&nbsp;&nbsp;&nbsp;&nbsp;Illustrator /
-                                Photoshop</span
-                            >
-                        </li>
-                    </ul>
-                    <ul class="ill">
-                        <li><img src="img/page5_illustrator.png" /></li>
-                        <li class="phone">
-                            <img src="img/illustrator1.png" />
-                        </li>
-                        <li>
-                            <ul class="ill3">
-                                <li><img src="img/illustrator2.png" /></li>
-                                <li><img src="img/illustrator3.png" /></li>
-                                <li><img src="img/illustrator4.png" /></li>
-                            </ul>
-                        </li>
-                    </ul>
+              </div>
+              <div class="contribution">
+                <p class="contribution_txt1">기여도</p>
+                <div>
+                  <p>기&nbsp;&nbsp;&nbsp;획&nbsp;<span>100%</span></p>
+                  <p>디자인 <span>100%</span></p>
+                  <p>제&nbsp;&nbsp;&nbsp;작&nbsp;<span>100%</span></p>
                 </div>
-            </section>
-            <section class="page6" id="page6">
-                <div class="end">
-                    <p>
-                        감사합니다!<br />
-                        세상을 연결하는<br />
-                        웹퍼블리셔, 양혜영이었습니다.
-                    </p>
-                    <div class="endmessage">
-                        <div>
-                            <i class="fa-solid fa-envelope"></i> eyhyy@naver.com
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-phone"></i> 010.4103.3796
-                        </div>
-                    </div>
+              </div>
+              <div class="announce">
+                <p class="an_txt1">내용설명</p>
+                <p class="an_txt2">
+                  기존 사이트의 아쉬웠던 점을<br />
+                  개선하여 메인페이지를 새롭게 제작했습니다.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="img/pc_mockup.png" />
+          </li>
+        </ul>
+      </section>
+      <section class="page4" id="page4">
+        <ul class="interduce_portfoilo">
+          <li>
+            <div class="site1">
+              <p class="site1_name">DAILY HEALTHY FOOD</p>
+              <div class="program">
+                <p>프로그램</p>
+                <div>
+                  <img src="img/html.png" />
+                  <img src="img/html.png" />
+                  <img src="img/html.png" />
                 </div>
-            </section>
+              </div>
+              <div class="contribution">
+                <p class="contribution_txt1">기여도</p>
+                <div>
+                  <p>기&nbsp;&nbsp;&nbsp;획&nbsp;<span>100%</span></p>
+                  <p>디자인 <span>100%</span></p>
+                  <p>제&nbsp;&nbsp;&nbsp;작&nbsp;<span>100%</span></p>
+                </div>
+              </div>
+              <div class="announce">
+                <p class="an_txt1">내용설명</p>
+                <p class="an_txt2">
+                  기존 사이트의 아쉬웠던 점을<br />
+                  개선하여 메인페이지를 새롭게 제작했습니다.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="img/pc_mockup.png" />
+          </li>
+        </ul>
+      </section>
+
+      <section class="page5" id="page5">
+        <h2 class="de">DESIGN</h2>
+        <div class="new_de">
+          <ul class="period">
+            <li class="new_de_txt">Illustrator New Design</li>
+            <li class="underbar">-</li>
+            <li>
+              <strong>작업기간</strong>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;2024.11.01~11.30</span>
+            </li>
+            <li>
+              <strong>기 여 도</strong>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1인 제작 / 100%</span>
+            </li>
+            <li>
+              <strong>프로그램</strong>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;Illustrator / Photoshop</span>
+            </li>
+          </ul>
+          <ul class="ill">
+            <li><img src="img/page5_illustrator.png" /></li>
+            <li class="phone">
+              <img src="img/illustrator1.png" />
+            </li>
+            <li>
+              <ul class="ill3">
+                <li><img src="img/illustrator2.png" /></li>
+                <li><img src="img/illustrator3.png" /></li>
+                <li><img src="img/illustrator4.png" /></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-    </body>
+      </section>
+      <section class="page6" id="page6">
+        <div class="end">
+          <p>
+            감사합니다!<br />
+            세상을 연결하는<br />
+            웹퍼블리셔, 양혜영이었습니다.
+          </p>
+          <div class="endmessage">
+            <div><i class="fa-solid fa-envelope"></i> eyhyy@naver.com</div>
+            <div><i class="fa-solid fa-phone"></i> 010.4103.3796</div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      $(".wrap1")
+        .find(".st0")
+        .each(function (index, path) {
+          let length = path.getTotalLength();
+          console.log(length);
+        });
+    </script>
+  </body>
 </html>
