@@ -8,17 +8,12 @@
         <link rel="stylesheet" href="css/reset.css" />
         <script src="js/jquery-3.7.1.min.js"></script>
         <script src="js/custom.js"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
         <link
-            href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap"
             rel="stylesheet"
         />
-
-        <link
-            href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Noto+Serif+KR:wght@200..900&display=swap"
-            rel="stylesheet"
-        />
-
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -26,62 +21,62 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     </head>
 
     <body>
         <header>
             <ul class="menu">
-                <li><a href="#page1">PAGE1</a></li>
-                <li><a href="#page2">PAGE2</a></li>
-                <li><a href="#page3">PAGE3</a></li>
-                <li><a href="#page4">PAGE4</a></li>
-                <li><a href="#page5">PAGE5</a></li>
-                <li><a href="#page6">PAGE6</a></li>
+                <li><a href="#page1">ABOUT ME</a></li>
+                <li><a href="#page2">LOGO</a></li>
+                <li><a href="#page3">WORK1</a></li>
+                <li><a href="#page4">WORK2</a></li>
+                <li><a href="#page5">DESIGN</a></li>
+                <li><a href="#page6">CONTACT ME</a></li>
             </ul>
         </header>
 
         <div id="visual">
             <div class="mainlogo">
-                <div class="maintxt1">
-                    <h1>
-                        <a href="index.html">
-                            <img src="img/logo.png" />
-                        </a>
-                    </h1>
+                <div class="screen">
+                    <div class="maintxt1">
+                        <h1>
+                            <a href="index.html">
+                                <img src="img/logo.png" />
+                            </a>
+                        </h1>
 
-                    <h2>20<br /><span class="year">24</span></h2>
-                </div>
-                <div class="mainbox2">
-                    <div class="bigcircle"></div>
-                    <div class="loading">
-                        <span class="circle1"></span>
-                        <span class="circle2"></span>
+                        <h2>20<br /><span class="year">24</span></h2>
                     </div>
-                </div>
-                <div class="maintxt_name">
-                    <p>
-                        세상을 연결하는 <br />&nbsp;&nbsp;웹퍼블리셔,
-                        <span>양혜영</span>
-                        입니다
-                    </p>
-                </div>
 
-                <div class="file">
-                    <p>WEB PUBLISHER PORTFOLIO</p>
-                    <hr />
-                    <div>
-                        <a class="portfolio" href="#page3"
-                            ><i class="fa-solid fa-diamond dia"></i> WEB
-                            <i class="fa-solid fa-diamond dia"></i
-                        ></a>
+                    <div class="mainbox2">
+                        <div class="bigcircle"></div>
+                        <div class="loading">
+                            <span class="circle1"></span>
+                            <span class="circle2"></span>
+                        </div>
+                    </div>
+                    <div class="maintxt_name">
+                        <p>
+                            세상을 연결하는 <br />&nbsp;&nbsp;웹퍼블리셔,
+                            <span>양혜영</span>
+                            입니다
+                        </p>
+                    </div>
 
-                        <a class="design" href="#page5">
-                            <i class="fa-solid fa-diamond dia"></i> DESIGN
-                            <i class="fa-solid fa-diamond dia"></i
-                        ></a>
+                    <div class="file">
+                        <p>WEB PUBLISHER PORTFOLIO</p>
+                        <hr />
+                        <div>
+                            <a class="portfolio" href="#page3"
+                                ><i class="fa-solid fa-diamond dia"></i> WEB
+                                <i class="fa-solid fa-diamond dia"></i
+                            ></a>
+
+                            <a class="design" href="#page5">
+                                <i class="fa-solid fa-diamond dia"></i> DESIGN
+                                <i class="fa-solid fa-diamond dia"></i
+                            ></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -109,19 +104,17 @@
                 </svg>
             </div>
             <section class="page1" id="page1">
+                <h2>ABOUT ME</h2>
                 <ul class="profile">
                     <li class="photo">
-                        <h2>ABOUT ME</h2>
                         <img class="me" src="img/profile.jpg" />
                         <p class="resolution">
                             "모든 선택에는 이유가 있는 명확함이 있다고
                             생각합니다.<br />
-                            사용자의 경험 또한 어떤 영향을 미칠지에 대한 중요한
-                            근거가 될 수 있기에,<br />
                             작은 웹사이트라 할지라도 구조를 안정적으로
                             구현해나가서<br />
-                            사용자에게 편리함을 전달하는 웹퍼블리셔로 도약해
-                            나가고 싶습니다."
+                            사용자에게 편리함을 전하는 웹퍼블리셔로
+                            성장하겠습니다."
                         </p>
                     </li>
 
@@ -169,49 +162,37 @@
                                     </li>
 
                                     <li>
-                                        <img src="img/html.png" />
-                                        <span class="bar">
-                                            <span class="pro1"></span>
-                                        </span>
+                                        <img src="img/css.png" />
+                                        <ul class="bar">
+                                            <li class="pro2"></li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <img src="img/html.png" />
-                                        <span class="bar">
-                                            <span class="pro1"></span>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <img src="img/html.png" />
-                                        <span class="bar">
-                                            <span class="pro1"></span>
-                                        </span>
+                                        <img src="img/js.png" />
+                                        <ul class="bar">
+                                            <li class="pro3"></li>
+                                        </ul>
                                     </li>
                                 </ul>
                                 <ul class="skill">
                                     <li>
-                                        <img src="img/html.png" />
+                                        <img src="img/jquery.png" />
                                         <ul class="bar">
-                                            <li class="pro1"></li>
+                                            <li class="pro4"></li>
                                         </ul>
                                     </li>
 
                                     <li>
-                                        <img src="img/html.png" />
-                                        <span class="bar">
-                                            <span class="pro1"></span>
-                                        </span>
+                                        <img src="img/ps.png" />
+                                        <ul class="bar">
+                                            <li class="pro5"></li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <img src="img/html.png" />
-                                        <span class="bar">
-                                            <span class="pro1"></span>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <img src="img/html.png" />
-                                        <span class="bar">
-                                            <span class="pro1"></span>
-                                        </span>
+                                        <img src="img/ai.png" />
+                                        <ul class="bar">
+                                            <li class="pro6"></li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </div>
@@ -221,21 +202,21 @@
                         <div>
                             <p class="lisence_txt">LISENCE</p>
                             <p>
-                                <span>2024.09.09 - </span>웹디자인기능사
-                                필기합격<span> (한국산업인력공단)</span>
+                                <span>2024.12 - </span>웹디자인기능사
+                                <span> (한국산업인력공단)</span>
                             </p>
                             <p>
-                                <span>2024.09.13 - </span> GTQ 1급<span>
+                                <span>2024.09 - </span> GTQ 1급<span>
                                     <span> (한국생산성본부)</span>
                                 </span>
                             </p>
                             <p>
-                                <span>2023.12.13 - </span>
+                                <span>2023.12 - </span>
                                 사무자동화산업기사
                                 <span> (한국산업인력공단)</span>
                             </p>
                             <p class="word">
-                                <span>2022.04.15 - </span>
+                                <span>2022.04 - </span>
                                 워드프로세서 1급<span> (대한상공회의소)</span>
                             </p>
                         </div>
@@ -243,65 +224,44 @@
                             <p class="career_txt1">CAREER</p>
                             <p>
                                 <span>2018.07~2024.06 -</span>
-                                NH농협생명근무<span>
-                                    (IT기획팀, 방카사업팀)</span
-                                >
+                                NH농협생명<span> (IT기획팀, 방카사업팀)</span>
                             </p>
                             <p class="career_txt2">
-                                <span>2013.09-2014.09</span> - 미래골드
-                                근무<span> (주얼리 도매팀)</span>
+                                <span>2013.09~2014.09</span> - 미래골드
+                                <span> (주얼리 도매팀)</span>
                             </p>
                         </div>
                         <div class="interested">
-                            <p class="interested_txt">INTERESTED</p>
+                            <p class="interested_txt">LIFE STYLE</p>
 
-                            <ul>
-                                <!-- <li>
-                                    <div class="interested_txt1">
-                                        <p><strong>MUSIC</strong></p>
-                                        <i
-                                            class="fa-solid fa-headphones interested_icon"
-                                        ></i>
-                                    </div>
-                                    <p class="interested_txt2">
-                                        곡의 흐름이 변하고 분위기가 바뀌면
-                                        새로운 감정의 흐름을 발견할 수 있습니다.
-                                        그래서 다양한 장르의 음악을 듣는 것을
-                                        좋아합니다.
-                                    </p>
-                                </li> -->
-
+                            <ul class="life">
                                 <li>
                                     <div class="interested_txt1">
-                                        <p><strong>DRAW</strong></p>
-                                        <i
-                                            class="fa-solid fa-pencil interested_icon"
-                                        ></i>
+                                        <i class="fa-solid fa-pencil icon"></i>
+                                        <p>
+                                            마카로 그림을 그리면서 힐링합니다.
+                                        </p>
                                     </div>
-                                    <p class="interested_txt2">
-                                        마카로 그리는것을 좋아합니다. 그리고자
-                                        하는 대상의 선과 명암을 실제처럼 나타낼
-                                        수 있을지를 고민하는것이 흥미롭고,<br />
-                                        마카재료 특성상 건조가 빠르다는 점이
-                                        짧은 시간내에 결과물을 볼 수 있어서 빠른
-                                        작업이 가능합니다.
-                                    </p>
                                 </li>
 
                                 <li>
                                     <div class="interested_txt1">
-                                        <p><strong>MOVIE</strong></p>
                                         <i
-                                            class="fa-solid fa-clapperboard interested_icon"
+                                            class="fa-solid fa-clapperboard icon"
                                         ></i>
+                                        <p>
+                                            영화를 보면서 스트레스를 해소해요!
+                                        </p>
                                     </div>
-                                    <p class="interested_txt2">
-                                        영화보는 것을 좋아합니다. 다양한 장르의
-                                        영화속의 이야기들은 새로운 창의력을
-                                        안겨줍니다. 실제 상황에서는 일어나지
-                                        않을 법한 일들을 통해 다양한 관점에서
-                                        사물을 바라보는 시각화를 만들어 줍니다.
-                                    </p>
+                                </li>
+
+                                <li>
+                                    <div class="interested_txt1">
+                                        <i
+                                            class="fa-solid fa-headphones icon"
+                                        ></i>
+                                        <p>음악을 들으며 생각을 정리합니다.</p>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -323,17 +283,17 @@
                         xml:space="preserve"
                     >
                         <style type="text/css">
-                            .st1 {
+                            <!-- .st1 {
                                 fill: none;
-                                stroke: #000000;
+                                stroke: skyblue;
                                 stroke-width: 4;
                                 stroke-linecap: round;
                                 stroke-linejoin: round;
                                 stroke-miterlimit: 10;
-                            }
+                            } -->
                         </style>
                         <path
-                            class="st0"
+                            class="st1"
                             d="M0.06,168.09c-0.09,76.05,25.93,135.87,86.01,143.06c60.08,7.18,88.21-31.99,94.74-41.55
 	c14.1-20.67,7.64-66.5-35.63-63.51s-62.88,89.27-6.82,145.94s124.54,64.66,175.32,23.55s38.03-83.68-1.64-84.2
 	s-107.94,78.55-51.21,160.11c36.13,51.93,173.63,78.22,260.05,3.9"
@@ -341,36 +301,43 @@
                     </svg>
                 </div>
                 <div class="logo_color">
-                    <div class="logo">
-                        <h3># LOGO MAIN COLOR</h3>
-                        <div class="bg1"><p>#1e2f68</p></div>
-                        <div class="bg2"><p>#c8d8e7</p></div>
-                        <div class="bg3"><p>#1f2247</p></div>
-                        <div class="bg4"><p>#ebe9e6</p></div>
-                    </div>
-                    <div class="logoimg">
-                        <img src="img/mainlogo6.png" />
+                    <div>
+                        <h3># MAIN LOGO</h3>
+                        <div><img src="img/mainlogo6.png" /></div>
                     </div>
 
-                    <div class="logo_txt">
-                        <h3># KEY WORLD</h3>
+                    <div>
+                        <div class="logo">
+                            <div class="bg1"><p>#1e2f68</p></div>
+                            <div class="bg2"><p>#c8d8e7</p></div>
+                            <div class="bg3"><p>#1f2247</p></div>
+                            <div class="bg4"><p>#ebe9e6</p></div>
+                        </div>
+                        <div class="logo_txt">
+                            <div>
+                                <h3># KEY WORLD</h3>
+                            </div>
 
-                        <p class="logo_txt1">
-                            <span>H</span> + <span>Y</span> =
-                            <span>BRIDGE</span>
-                        </p>
-                        <p class="logo_txt2">
-                            이니셜 "H"와 "Y"를 이용해서<br />
-                            구조물의 중요한 지지요소인<br />
-                            다리를 표현했습니다.<br />
-                            <br />
-                            웹사이트 구조를 안정적으로<br />
-                            구현해내고자 하는 의미를 담았습니다.<br />
-                            <br />
-                            또한, 파란색 계열의 컬러를 매치시켜 신뢰, 조화,
-                            믿음을 상징했습니다.
-                        </p>
-                        <div><img src="img/logophone5.png" /></div>
+                            <div>
+                                <p class="logo_txt1">
+                                    <span>H</span> + <span>Y</span> =
+                                    <span>BRIDGE</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="logo_txt2">
+                                    이니셜 "H"&"Y"를 이용해서<br />
+                                    구조물의 중요한 지지요소인<br />
+                                    다리를 표현했습니다.<br />
+                                    <br />
+                                    웹사이트 구조를 안정적으로<br />
+                                    구현해내고자 하는 의미를 담았습니다.<br />
+                                    <br />
+                                    파란색 계열의 4가지 컬러를 매치시킴으로
+                                    신뢰, 조화, 믿음을 상징했습니다.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -380,144 +347,274 @@
                 <ul class="interduce_portfoilo">
                     <li>
                         <div class="site1">
-                            <p class="site1_name">DAILY HEALTHY FOOD</p>
+                            <div class="site1_name">
+                                <div class="planbar"></div>
+                                <h3>DAILY HEALTHY</h3>
+                                <p>
+                                    oo브랜드 메인페이지<br />
+                                    브랜드 디자인
+                                </p>
+                            </div>
+
+                            <div class="projectDay">
+                                <div class="bar"></div>
+                                <p>작업기간 : <span> 2024.12</span></p>
+                            </div>
+
                             <div class="program">
+                                <div class="bar"></div>
                                 <p>프로그램</p>
-                                <div>
-                                    <img src="img/html.png" />
-                                    <img src="img/html.png" />
-                                    <img src="img/html.png" />
+                                <div class="programList">
+                                    <span>포토샵</span> <span>일러스트</span>
+                                    <span>htmlcss</span>
                                 </div>
                             </div>
+
                             <div class="contribution">
-                                <p class="contribution_txt1">기여도</p>
-                                <div>
-                                    <p>
-                                        기&nbsp;&nbsp;&nbsp;획&nbsp;<span
-                                            >100%</span
-                                        >
-                                    </p>
-                                    <p>디자인 <span>100%</span></p>
-                                    <p>
-                                        제&nbsp;&nbsp;&nbsp;작&nbsp;<span
-                                            >100%</span
-                                        >
-                                    </p>
+                                <div class="bar"></div>
+                                <p>기여도</p>
+                                <div class="contributionTxt">
+                                    <span>기획100%</span> /
+                                    <span>디자인 100%</span> /
+                                    <span>제작 100%</span>
                                 </div>
                             </div>
+
                             <div class="announce">
-                                <p class="an_txt1">내용설명</p>
-                                <p class="an_txt2">
+                                <div class="bar"></div>
+                                <p class="announce_txt1">내용설명</p>
+                                <p class="announce_txt2">
                                     기존 사이트의 아쉬웠던 점을<br />
                                     개선하여 메인페이지를 새롭게 제작했습니다.
                                 </p>
                             </div>
+
+                            <div class="plan">
+                                <div class="planbar"></div>
+                                <div class="planTxt">
+                                    <a href="#">기획안</a>
+                                    <a href="#">WEBSITE 바로가기</a>
+                                </div>
+                            </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="site2">
                         <img src="img/pc_mockup.png" />
                     </li>
                 </ul>
             </section>
             <section class="page4" id="page4">
                 <ul class="interduce_portfoilo">
-                    <li>
-                        <div class="site1">
-                            <p class="site1_name">DAILY HEALTHY FOOD</p>
+                    <li class="site1">
+                        <div>
+                            <div class="site1_name">
+                                <div class="planbar"></div>
+                                <h3>DAILY HEALTHY</h3>
+                                <p>
+                                    oo브랜드 메인페이지<br />
+                                    브랜드 디자인
+                                </p>
+                            </div>
+
+                            <div class="projectDay">
+                                <div class="bar"></div>
+                                <p>작업기간 : <span> 2024.12</span></p>
+                            </div>
+
                             <div class="program">
+                                <div class="bar"></div>
                                 <p>프로그램</p>
-                                <div>
-                                    <img src="img/html.png" />
-                                    <img src="img/html.png" />
-                                    <img src="img/html.png" />
+                                <div class="programList">
+                                    <span>포토샵</span> <span>일러스트</span>
+                                    <span>htmlcss</span>
                                 </div>
                             </div>
+
                             <div class="contribution">
-                                <p class="contribution_txt1">기여도</p>
-                                <div>
-                                    <p>
-                                        기&nbsp;&nbsp;&nbsp;획&nbsp;<span
-                                            >100%</span
-                                        >
-                                    </p>
-                                    <p>디자인 <span>100%</span></p>
-                                    <p>
-                                        제&nbsp;&nbsp;&nbsp;작&nbsp;<span
-                                            >100%</span
-                                        >
-                                    </p>
+                                <div class="bar"></div>
+                                <p>기여도</p>
+                                <div class="contributionTxt">
+                                    <span>기획100%</span> /
+                                    <span>디자인 100%</span> /
+                                    <span>제작 100%</span>
                                 </div>
                             </div>
+
                             <div class="announce">
-                                <p class="an_txt1">내용설명</p>
-                                <p class="an_txt2">
+                                <div class="bar"></div>
+                                <p class="announce_txt1">내용설명</p>
+                                <p class="announce_txt2">
                                     기존 사이트의 아쉬웠던 점을<br />
                                     개선하여 메인페이지를 새롭게 제작했습니다.
                                 </p>
                             </div>
+
+                            <div class="plan">
+                                <div class="planbar"></div>
+                                <div class="planTxt">
+                                    <a href="#">기획안</a>
+                                    <a href="#">WEBSITE 바로가기</a>
+                                </div>
+                            </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="site2">
                         <img src="img/pc_mockup.png" />
                     </li>
                 </ul>
             </section>
 
             <section class="page5" id="page5">
-                <h2 class="de">DESIGN</h2>
-                <div class="new_de">
-                    <ul class="period">
-                        <li class="new_de_txt">Illustrator New Design</li>
-                        <li class="underbar">-</li>
-                        <li>
-                            <strong>작업기간</strong>
-                            <span
-                                >&nbsp;&nbsp;&nbsp;&nbsp;2024.11.01~11.30</span
-                            >
-                        </li>
-                        <li>
-                            <strong>기 여 도</strong>
-                            <span
-                                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1인 제작 /
-                                100%</span
-                            >
-                        </li>
-                        <li>
-                            <strong>프로그램</strong>
-                            <span
-                                >&nbsp;&nbsp;&nbsp;&nbsp;Illustrator /
-                                Photoshop</span
-                            >
-                        </li>
-                    </ul>
-                    <ul class="ill">
-                        <li><img src="img/page5_illustrator.png" /></li>
-                        <li class="phone">
-                            <img src="img/illustrator1.png" />
-                        </li>
-                        <li>
-                            <ul class="ill3">
-                                <li><img src="img/illustrator2.png" /></li>
-                                <li><img src="img/illustrator3.png" /></li>
-                                <li><img src="img/illustrator4.png" /></li>
+                <h2>DESIGN</h2>
+                <div class="newDesign">
+                    <div class="illustrator">
+                        <ul class="Design1">
+                            <li><img src="img/illustrator1.png" /></li>
+                            <li><img src="img/illustrator2.png" /></li>
+                            <li><img src="img/illustrator3.png" /></li>
+                        </ul>
+                    </div>
+
+                    <div class="work">
+                        <div class="work1">
+                            <div class="work_txt1">
+                                <div class="workbar2"></div>
+                                <h3>Illustrator New Design</h3>
+                            </div>
+
+                            <div class="work_txt2">
+                                <div class="bar2"></div>
+                                <div>
+                                    <p>
+                                        작업기간 <span>2024.11.01~11.30</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="work_txt3">
+                                <div class="bar2"></div>
+                                <p>기여도</p>
+                                <div>
+                                    <span>기획100%</span> /
+                                    <span>디자인 100%</span> /
+                                    <span>제작 100%</span>
+                                </div>
+                            </div>
+
+                            <div class="work_txt4">
+                                <div class="bar2"></div>
+                                <p>프로그램</p>
+                                <div>
+                                    <span>포토샵</span> <span>일러스트</span>
+                                    <span>htmlcss</span>
+                                </div>
+                            </div>
+
+                            <div class="work_txt5">
+                                <div class="workbar2"></div>
+                            </div>
+
+                            <ul class="Design2">
+                                <li>
+                                    <a href="#"
+                                        ><img src="img/illustrator1.png"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><img src="img/illustrator2.png"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><img src="img/illustrator3.png"
+                                    /></a>
+                                </li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="page6" id="page6">
+                <div class="wrap3">
+                    <svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 595.28 283.46"
+                        style="enable-background: new 0 0 595.28 283.46"
+                        xml:space="preserve"
+                    >
+                        <style type="text/css">
+                            <!-- .st2 {
+                              fill: none;
+                              stroke: #000000;
+                              stroke-miterlimit: 10;
+                            } -->
+                        </style>
+                        <path
+                            class="st2"
+                            d="M-1.44,225.77c0,0,56.76-101.91,145.16-37.78s143.88,18.85,158.69-14.31s58.37-132.4,133.75-67.97
+           s163.31-33.25,163.31-33.25"
+                        />
+                    </svg>
+                </div>
                 <div class="end">
                     <p>
                         감사합니다!<br />
                         세상을 연결하는<br />
-                        웹퍼블리셔, 양혜영이었습니다.
+                        웹퍼블리셔, <span>양혜영</span>이었습니다.
                     </p>
-                    <div class="endmessage">
-                        <div>
-                            <i class="fa-solid fa-envelope"></i> eyhyy@naver.com
+                    <div class="end_back">
+                        <h2>CONTACT ME</h2>
+                        <div class="note">
+                            <ul>
+                                <li>
+                                    <input
+                                        class="w3-input w3-border"
+                                        type="text"
+                                        placeholder="Name"
+                                    />
+                                </li>
+                                <li>
+                                    <input
+                                        class="w3-input w3-border"
+                                        type="text"
+                                        placeholder="Email"
+                                    />
+                                </li>
+                                <li>
+                                    <input
+                                        class="w3-input w3-border"
+                                        type="text"
+                                        placeholder="Message"
+                                    />
+                                </li>
+                            </ul>
+                            <div class="w3-button w3-black send">
+                                <a href="https://www.naver.com/">
+                                    <i class="fa-solid fa-paper-plane"></i> SEND
+                                    MESSAGE</a
+                                >
+                            </div>
                         </div>
-                        <div>
-                            <i class="fa-solid fa-phone"></i> 010.4103.3796
+
+                        <div class="endmessage">
+                            <div>
+                                <a href="https://www.naver.com/">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    eyhyy@naver.com</a
+                                >
+                            </div>
+                            <div>
+                                <a href="#"
+                                    ><i class="fa-solid fa-phone"></i>
+                                    010.4103.3796</a
+                                >
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -533,8 +630,19 @@
                     console.log(length);
                 });
 
-            //st0 423
-            //st1 118
+            $(".wrap2")
+                .find(".st1")
+                .each(function (index, path) {
+                    let length = path.getTotalLength();
+                    console.log(length);
+                });
+
+            $(".wrap3")
+                .find(".st2")
+                .each(function (index, path) {
+                    let length = path.getTotalLength();
+                    console.log(length);
+                });
         </script>
     </body>
 </html>
