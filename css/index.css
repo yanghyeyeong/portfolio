@@ -20,7 +20,7 @@
         height: 2rem;
         line-height: 2rem;
         text-align: center;
-        font-size: 12px;
+        font-size: 10px;
     }
     header a {
         width: 100%;
@@ -95,14 +95,14 @@
 
     /**********************Visual mainbox2 bigcircle********************/
     .bigcircle {
-        width: 25rem;
-        height: 25rem;
+        width: 22rem;
+        height: 22rem;
         border: 2px solid;
         border-color: #333 #aaa;
         position: absolute;
         left: 50%;
-        top: 40%;
-        transform: translate(-50%, -40%);
+        top: 50%;
+        transform: translate(-50%, -50%);
         border-radius: 100%;
         opacity: 0.3;
         animation: big 10s ease infinite;
@@ -125,9 +125,9 @@
     .loading {
         position: absolute;
         left: 50%;
-        top: 40%;
+        top: 50%;
         width: 30px;
-        height: 26.875rem;
+        height: 24rem;
         animation: loading 15s ease infinite;
     }
 
@@ -145,7 +145,7 @@
         height: 30px;
         border-radius: 50%;
         background: #fff;
-        margin-top: 23rem;
+        margin-top: 20rem;
         box-shadow: 0 0 10px #fff;
     }
 
@@ -160,11 +160,11 @@
 
     /**************************maintxt_name**************************/
     .maintxt_name {
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 1.2;
         position: absolute;
-        left: 15%;
-        top: 35%;
+        left: 10%;
+        top: 45%;
         /* transform: translate(-25%, -50%); */
         font-family: "Do Hyeon", sans-serif;
         font-weight: bolder;
@@ -193,7 +193,7 @@
         /* height: 220px; */
         position: absolute;
         right: 0px;
-        bottom: 5rem;
+        bottom: 2rem;
         text-align: center;
     }
     .file p {
@@ -231,7 +231,7 @@
         text-align: center;
         border: 1px solid #222;
         border-radius: 100%;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .portfolio {
         margin-bottom: 10px;
@@ -440,7 +440,7 @@
         margin-bottom: 5px;
     }
     .skill .bar {
-        width: 10rem;
+        width: 7rem;
         height: 1rem;
         border: 2px solid #c8d8e7;
         border-radius: 0px 20px 20px 0px;
@@ -457,32 +457,38 @@
     .skill .pro1 {
         /* width: 4.5rem; */
         /* width: 9rem; */
-        width: 8rem;
+        /* width: 8rem; */
+        width: 5.5rem;
     }
     .skill .pro2 {
         /* width: 4.5rem; */
         /* width: 9rem; */
-        width: 8rem;
+        /* width: 8rem; */
+        width: 5.5rem;
     }
     .skill .pro3 {
         /* width: 3.5rem; */
         /* width: 7.5rem; */
-        width: 7rem;
+        /* width: 7rem; */
+        width: 5rem;
     }
     .skill .pro4 {
         /* width: 4rem; */
         /* width: 8rem; */
-        width: 7.5rem;
+        /* width: 7.5rem; */
+        width: 5rem;
     }
     .skill .pro5 {
         /* width: 4.5rem; */
         /* width: 9rem; */
-        width: 8rem;
+        /* width: 8rem; */
+        width: 5.5rem;
     }
     .skill .pro6 {
         /* width: 4rem; */
         /* width: 8rem; */
-        width: 7.5rem;
+        /* width: 7.5rem; */
+        width: 5rem;
     }
 
     /*****************************lisence*******************************/
@@ -796,7 +802,7 @@
 
     /*********************** page3/page4 site1*************************/
     .site1 {
-        padding: 0rem 0rem 3rem 3rem;
+        padding: 0rem 0rem 3rem 1rem;
         box-sizing: border-box;
         /* border: 1px solid red; */
         opacity: 0;
@@ -933,7 +939,7 @@
         width: 100%;
         height: 100vh;
         margin-top: 100px;
-        /* border: 1px solid rgb(16, 215, 12); */
+        border: 1px solid rgb(16, 215, 12);
     }
     .page5 h2 {
         width: 50%;
@@ -1077,22 +1083,21 @@
     .page6 {
         width: 100%;
         height: 100vh;
-        margin-top: 10%;
+        margin-top: 150px;
         background-image: url(../img/page3_pc1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
         position: relative;
+        border: 1px solid red;
     }
-
     .wrap3 {
         width: 100%;
-        height: 30%;
+
         opacity: 0.8;
         position: absolute;
-        left: -20%;
-        bottom: 42%;
-        transform: rotate(40deg);
+        left: 00%;
+        bottom: 55%;
     }
 
     .st2 {
@@ -1117,8 +1122,8 @@
         font-size: 1.5rem;
         font-weight: bold;
         position: absolute;
-        left: 20%;
-        top: 30%;
+        left: 12%;
+        top: 20%;
         /* display: none; */
     }
     .end span {
@@ -1159,7 +1164,7 @@
     .end_back {
         position: absolute;
         bottom: 40%;
-        left: 25%;
+        left: 12%;
     }
     .end_back h2 {
         width: 100%;
